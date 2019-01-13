@@ -18,7 +18,22 @@ namespace Library.Forms
         public Main()
         {
             InitializeComponent();
+            this.Style = MetroFramework.MetroColorStyle.Green;
         }
-       
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Books books = new Books();
+            books.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FUsers user = new FUsers();
+            user.Show();
+            
+        }
     }
 }

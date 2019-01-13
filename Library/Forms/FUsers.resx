@@ -117,59 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="iconfinder_users_40978" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_users_40978.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_Sed-01_2236069" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_Sed-01_2236069.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_config-users_28644 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_config-users_28644 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_user-home_118931" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_user-home_118931.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_bookcase_1228 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_bookcase_1228 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_books-lb_86104" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_books-lb_86104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_Facebook_UI-14_2344290 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_Facebook_UI-14_2344290 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_LinkedIn_UI-15_23355901" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_LinkedIn_UI-15_23355901.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_bookcase_1228" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_bookcase_1228.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2335590-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2335590-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_bookcase_12281" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_bookcase_12281.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_xmag_8826 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_xmag_8826 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_Facebook_UI-14_2344290" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_Facebook_UI-14_2344290.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_LinkedIn_UI-15_2335590" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_LinkedIn_UI-15_2335590.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_Facebook_UI-14_2344290 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_Facebook_UI-14_2344290 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_user-home_1189311" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_user-home_1189311.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_config-users_28644 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_config-users_28644 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Admin-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Admin-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

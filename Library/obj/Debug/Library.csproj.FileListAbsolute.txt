@@ -4,7 +4,6 @@ C:\Users\sabinara\Desktop\Library\Library\bin\Debug\Library.pdb
 C:\Users\sabinara\Desktop\Library\Library\bin\Debug\MetroFramework.Design.dll
 C:\Users\sabinara\Desktop\Library\Library\bin\Debug\MetroFramework.dll
 C:\Users\sabinara\Desktop\Library\Library\bin\Debug\MetroFramework.Fonts.dll
-C:\Users\sabinara\Desktop\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
 C:\Users\sabinara\Desktop\Library\Library\obj\Debug\Library.Form1.resources
 C:\Users\sabinara\Desktop\Library\Library\obj\Debug\Library.Properties.Resources.resources
 C:\Users\sabinara\Desktop\Library\Library\obj\Debug\Library.csproj.GenerateResource.cache
@@ -18,3 +17,6 @@ C:\Users\sabinara\Desktop\Library\Library\bin\Debug\EntityFramework.xml
 C:\Users\sabinara\Desktop\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\sabinara\Desktop\Library\Library\obj\Debug\Library.Forms.Main.resources
 C:\Users\sabinara\Desktop\Library\Library\obj\Debug\Library.Forms.Books.resources
+C:\Users\sabinara\Desktop\Library\Library\obj\Debug\Library.Forms.FUsers.resources
+C:\Users\sabinara\Desktop\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
+C:\Users\sabinara\Desktop\Library\Library\obj\Debug\Library.Forms.Admins.resources

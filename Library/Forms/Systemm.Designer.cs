@@ -99,7 +99,7 @@
             this.txtPass.Location = new System.Drawing.Point(94, 175);
             this.txtPass.MaxLength = 32767;
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '\0';
+            this.txtPass.PasswordChar = '●';
             this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPass.SelectedText = "";
             this.txtPass.SelectionLength = 0;
@@ -108,6 +108,7 @@
             this.txtPass.Size = new System.Drawing.Size(144, 23);
             this.txtPass.TabIndex = 2;
             this.txtPass.UseSelectable = true;
+            this.txtPass.UseSystemPasswordChar = true;
             this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 

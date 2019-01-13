@@ -19,6 +19,7 @@ namespace Library.Forms
         public Books()
         {
             InitializeComponent();
+           
             FillData();
         }
         //yeni kitab əlavə edilməsi
@@ -86,7 +87,7 @@ namespace Library.Forms
             {
                 item.BookName = txtName.Text;
                 item.BookCount =Convert.ToInt32( numCount.Value);
-                item.DatePenaltyPrice=Convert.ToInt32(txtPrice.Text);
+                item.DatePenaltyPrice=Convert.ToDecimal(txtPrice.Text);
 
             }
             db.SaveChanges();
@@ -96,6 +97,39 @@ namespace Library.Forms
             btnUpdate.Visible = false;
             FillData();
 
+        }
+
+        private void txtSearh_Click(object sender, EventArgs e)
+        {
+            txtSearh.ResetText();
+            FillData();
+            
+        }
+        //kitabın adına görə axtarış
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+         
+                dataGridView1.Rows.Clear();
+                foreach (var item in db.Books.Where(b => b.BookName.Contains(txtSearh.Text)).ToList())
+                {
+                    dataGridView1.Rows.Add(item.BookId, item.BookName, item.BookCount, item.DatePenaltyPrice);
+                }
+            
+
+            if (db.Books.Any(b => b.BookName.Contains(txtSearh.Text)))
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Not Found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+
+        }
+        //əsas forma keçid 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main main = new Main();
+            main.Show();
         }
     }
 }

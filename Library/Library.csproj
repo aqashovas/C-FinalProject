@@ -63,17 +63,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Admins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admins.Designer.cs">
+      <DependentUpon>Admins.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Books.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\System.cs">
+    <Compile Include="Forms\FUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\System.Designer.cs">
-      <DependentUpon>System.cs</DependentUpon>
+    <Compile Include="Forms\FUsers.Designer.cs">
+      <DependentUpon>FUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Systemm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Systemm.Designer.cs">
+      <DependentUpon>Systemm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
@@ -110,14 +122,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Admins.resx">
+      <DependentUpon>Admins.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FUsers.resx">
+      <DependentUpon>FUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\System.resx">
-      <DependentUpon>System.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Systemm.resx">
+      <DependentUpon>Systemm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -173,6 +191,19 @@
       <DependentUpon>Database.edmx</DependentUpon>
       <LastGenOutput>Database.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Admin-icon.png" />
+    <None Include="Resources\2335590-48.png" />
+    <None Include="Resources\iconfinder_LinkedIn_UI-15_23355901.png" />
+    <None Include="Resources\iconfinder_LinkedIn_UI-15_2335590.png" />
+    <None Include="Resources\iconfinder_user-home_1189311.png" />
+    <None Include="Resources\iconfinder_user-home_118931.png" />
+    <None Include="Resources\iconfinder_books-lb_86104.png" />
+    <None Include="Resources\iconfinder_config-users_28644 %281%291.png" />
+    <None Include="Resources\iconfinder_config-users_28644 %281%29.png" />
+    <None Include="Resources\iconfinder_xmag_8826 %281%29.png" />
+    <None Include="Resources\iconfinder_bookcase_1228 %281%29.png" />
+    <None Include="Resources\iconfinder_bookcase_12281.png" />
+    <None Include="Resources\iconfinder_users_40978.png" />
     <None Include="Resources\iconfinder_bookcase_1228.png" />
   </ItemGroup>
   <ItemGroup>

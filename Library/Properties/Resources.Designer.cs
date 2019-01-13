@@ -63,9 +63,79 @@ namespace Library.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2335590_48 {
+            get {
+                object obj = ResourceManager.GetObject("2335590-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Admin_icon {
+            get {
+                object obj = ResourceManager.GetObject("Admin-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_bookcase_1228 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_bookcase_1228", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_bookcase_1228__1_ {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_bookcase_1228 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_bookcase_12281 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_bookcase_12281", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_books_lb_86104 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_books-lb_86104", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_config_users_28644__1_ {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_config-users_28644 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_config_users_28644__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_config-users_28644 (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +173,69 @@ namespace Library.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_LinkedIn_UI_15_2335590 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_LinkedIn_UI-15_2335590", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_LinkedIn_UI_15_23355901 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_LinkedIn_UI-15_23355901", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_Sed_01_2236069 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Sed-01_2236069", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_user_home_118931 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_user-home_118931", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_user_home_1189311 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_user-home_1189311", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_users_40978 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_users_40978", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_xmag_8826__1_ {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_xmag_8826 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
