@@ -14,7 +14,7 @@ namespace Library.Forms
 {
     public partial class Books : MetroForm
     {
-        private readonly LibraryEntities db = new LibraryEntities();
+        private readonly LibraryEntities1 db = new LibraryEntities1();
         private int SelectedId;
         public Books()
         {
