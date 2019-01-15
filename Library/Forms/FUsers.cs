@@ -15,7 +15,7 @@ namespace Library.Forms
 {
     public partial class FUsers : MetroForm
     {
-        private readonly LibraryEntities db = new LibraryEntities();
+        private readonly LibraryEntities1 db = new LibraryEntities1();
         private int SelectedId;
         public FUsers()
         {
@@ -77,6 +77,13 @@ namespace Library.Forms
             string abc = ab.Substring(4, 2);
             string totalNumber = abc + a + b + minute + id;
 
+ if (db.Users.Any(u => u.Phone == txtPhone.Text))
+            {
+                MetroFramework.MetroMessageBox.Show(this, "This user has already sign uped!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            else
+            {
             if (db.Users.Any(u => u.Password == txtPhone.Text))
             {
                 user.Password =(Convert.ToInt32(totalNumber)-1).ToString();
@@ -87,7 +94,7 @@ namespace Library.Forms
                 user.Password = totalNumber;
             }
             db.Users.Add(user);
-            db.SaveChanges();
+            db.SaveChanges();}
             FillData();
             Reset();
           
