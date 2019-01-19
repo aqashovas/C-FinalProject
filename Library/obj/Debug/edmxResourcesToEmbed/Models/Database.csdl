@@ -9,8 +9,8 @@
     <Property Name="ASurname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ALogName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Orders" Relationship="LibraryModel.FK_Orders_Admins" FromRole="Admin" ToRole="Order" />
-    <NavigationProperty Name="Orders1" Relationship="LibraryModel.FK_Orders_Admins1" FromRole="Admin" ToRole="Order" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Admins" FromRole="Admins" ToRole="Orders" />
+    <NavigationProperty Name="Orders1" Relationship="Self.FK_Orders_Admins1" FromRole="Admins" ToRole="Orders" />
   </EntityType>
   <EntityType Name="Book">
     <Key>
@@ -20,7 +20,7 @@
     <Property Name="BookName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="BookCount" Type="Int32" Nullable="false" />
     <Property Name="DatePenaltyPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-    <NavigationProperty Name="Orders" Relationship="LibraryModel.FK_Orders_Books" FromRole="Book" ToRole="Order" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Books" FromRole="Books" ToRole="Orders" />
   </EntityType>
   <EntityType Name="Order">
     <Key>
@@ -35,90 +35,90 @@
     <Property Name="EAdminId" Type="Int32" />
     <Property Name="Status" Type="Boolean" Nullable="false" />
     <Property Name="PenaltyPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-    <NavigationProperty Name="Admin" Relationship="LibraryModel.FK_Orders_Admins" FromRole="Order" ToRole="Admin" />
-    <NavigationProperty Name="Admin1" Relationship="LibraryModel.FK_Orders_Admins1" FromRole="Order" ToRole="Admin" />
-    <NavigationProperty Name="Book" Relationship="LibraryModel.FK_Orders_Books" FromRole="Order" ToRole="Book" />
-    <NavigationProperty Name="User" Relationship="LibraryModel.FK_Orders_Users" FromRole="Order" ToRole="User" />
+    <NavigationProperty Name="Admin" Relationship="Self.FK_Orders_Admins" FromRole="Orders" ToRole="Admins" />
+    <NavigationProperty Name="Admin1" Relationship="Self.FK_Orders_Admins1" FromRole="Orders" ToRole="Admins" />
+    <NavigationProperty Name="Book" Relationship="Self.FK_Orders_Books" FromRole="Orders" ToRole="Books" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Orders_Users" FromRole="Orders" ToRole="Users" />
   </EntityType>
-  <EntityContainer Name="LibraryEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Admins" EntityType="Self.Admin" />
-    <EntitySet Name="Books" EntityType="Self.Book" />
-    <EntitySet Name="Orders" EntityType="Self.Order" />
-    <AssociationSet Name="FK_Orders_Admins" Association="LibraryModel.FK_Orders_Admins">
-      <End Role="Admin" EntitySet="Admins" />
-      <End Role="Order" EntitySet="Orders" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Orders_Admins1" Association="LibraryModel.FK_Orders_Admins1">
-      <End Role="Admin" EntitySet="Admins" />
-      <End Role="Order" EntitySet="Orders" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Orders_Books" Association="LibraryModel.FK_Orders_Books">
-      <End Role="Book" EntitySet="Books" />
-      <End Role="Order" EntitySet="Orders" />
-    </AssociationSet>
-    <EntitySet Name="Users" EntityType="LibraryModel.User" />
-    <AssociationSet Name="FK_Orders_Users" Association="LibraryModel.FK_Orders_Users">
-      <End Role="User" EntitySet="Users" />
-      <End Role="Order" EntitySet="Orders" />
-    </AssociationSet>
-  </EntityContainer>
-  <Association Name="FK_Orders_Admins">
-    <End Type="LibraryModel.Admin" Role="Admin" Multiplicity="1" />
-    <End Type="LibraryModel.Order" Role="Order" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Admin">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Order">
-        <PropertyRef Name="SAdminId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Orders_Admins1">
-    <End Type="LibraryModel.Admin" Role="Admin" Multiplicity="0..1" />
-    <End Type="LibraryModel.Order" Role="Order" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Admin">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Order">
-        <PropertyRef Name="EAdminId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Orders_Books">
-    <End Type="LibraryModel.Book" Role="Book" Multiplicity="1" />
-    <End Type="LibraryModel.Order" Role="Order" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Book">
-        <PropertyRef Name="BookId" />
-      </Principal>
-      <Dependent Role="Order">
-        <PropertyRef Name="BookId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="UserId" />
     </Key>
     <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="UName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="USurname" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Orders" Relationship="LibraryModel.FK_Orders_Users" FromRole="User" ToRole="Order" />
-    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="USurname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Users" FromRole="Users" ToRole="Orders" />
   </EntityType>
-  <Association Name="FK_Orders_Users">
-    <End Type="LibraryModel.User" Role="User" Multiplicity="1" />
-    <End Type="LibraryModel.Order" Role="Order" Multiplicity="*" />
+  <Association Name="FK_Orders_Admins">
+    <End Role="Admins" Type="Self.Admin" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="User">
+      <Principal Role="Admins">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="SAdminId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Admins1">
+    <End Role="Admins" Type="Self.Admin" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Admins">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="EAdminId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Books">
+    <End Role="Books" Type="Self.Book" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BookId" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
         <PropertyRef Name="UserId" />
       </Principal>
-      <Dependent Role="Order">
+      <Dependent Role="Orders">
         <PropertyRef Name="UserId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityContainer Name="LibraryEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Orders_Admins" Association="Self.FK_Orders_Admins">
+      <End Role="Admins" EntitySet="Admins" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Admins1" Association="Self.FK_Orders_Admins1">
+      <End Role="Admins" EntitySet="Admins" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Books" Association="Self.FK_Orders_Books">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Users" Association="Self.FK_Orders_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
 </Schema>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="LibraryModelStoreContainer" CdmEntityContainer="LibraryEntities">
+  <EntityContainerMapping StorageEntityContainer="LibraryModelStoreContainer" CdmEntityContainer="LibraryEntities2">
     <EntitySetMapping Name="Admins">
       <EntityTypeMapping TypeName="LibraryModel.Admin">
         <MappingFragment StoreEntitySet="Admins">
@@ -40,11 +40,11 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="LibraryModel.User">
         <MappingFragment StoreEntitySet="Users">
-          <ScalarProperty Name="Phone" ColumnName="Phone" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="USurname" ColumnName="USurname" />
-          <ScalarProperty Name="UName" ColumnName="UName" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UName" ColumnName="UName" />
+          <ScalarProperty Name="USurname" ColumnName="USurname" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

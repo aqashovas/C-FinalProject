@@ -15,7 +15,7 @@ namespace Library.Forms
 {
     public partial class Admins : MetroForm
     {
-        private readonly LibraryEntities db = new LibraryEntities();
+        private readonly LibraryEntities2 db = new LibraryEntities2();
         private int SelectedId;
         public Admins()
         {
@@ -179,6 +179,11 @@ namespace Library.Forms
                 MetroFramework.MetroMessageBox.Show(this, "Not Found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+        }
+
+        private void grpUsers_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

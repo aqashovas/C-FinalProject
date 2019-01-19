@@ -4,15 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="06bd1c96618145f0a35adba2f0e88182" Name="Diagram1">
-        <EntityTypeShape EntityType="LibraryModel.Admin" Width="1.5" PointX="0.625" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LibraryModel.Book" Width="1.5" PointX="5.625" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="LibraryModel.Order" Width="1.5" PointX="3.375" PointY="0.5" IsExpanded="true" />
-        <AssociationConnector Association="LibraryModel.FK_Orders_Admins" />
-        <AssociationConnector Association="LibraryModel.FK_Orders_Admins1" />
-        <AssociationConnector Association="LibraryModel.FK_Orders_Books" />
-        <EntityTypeShape EntityType="LibraryModel.User" Width="1.5" PointX="0.75" PointY="3.875" />
-        <AssociationConnector Association="LibraryModel.FK_Orders_Users" />
+      <Diagram DiagramId="98ef516b2c0847f1909e01c0e426ed18" Name="Diagram1">
+        <EntityTypeShape EntityType="LibraryModel.Admin" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryModel.Book" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryModel.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryModel.User" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="LibraryModel.FK_Orders_Admins" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryModel.FK_Orders_Admins1" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryModel.FK_Orders_Books" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryModel.FK_Orders_Users" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

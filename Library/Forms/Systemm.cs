@@ -17,7 +17,7 @@ namespace Library
     public partial class Form1 : MetroForm
     {
         //bazanın çağırılması
-        private readonly LibraryEntities db = new LibraryEntities();
+        private readonly LibraryEntities2 db = new LibraryEntities2();
         public Form1()
         {
             InitializeComponent();
