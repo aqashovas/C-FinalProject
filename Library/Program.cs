@@ -17,7 +17,7 @@ namespace Library
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.FUsers());
+            Application.Run(new Form1());
         }
     }
 }

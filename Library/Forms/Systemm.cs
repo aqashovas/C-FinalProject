@@ -34,9 +34,14 @@ namespace Library
                 {
                     if (txtName.Text == item.ALogName && txtPass.Text == item.Password)
                     {
-                        MessageBox.Show("Ok");
+                        //adminin id -sinin əsas forma göndərilməsi
+                        int adminid = db.Admins.FirstOrDefault(a => a.ALogName == txtName.Text).Id;
+                        Forms.Main main = new Forms.Main(adminid);
+                        //əsas formun açılması
+                        this.Hide();
+                        main.Show();
                     }
-                    else
+                    else 
                     {
                         MetroFramework.MetroMessageBox.Show(this, "Username or password are is not correct!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }

@@ -127,9 +127,9 @@ namespace Library.Forms
         //əsas forma keçid 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Main main = new Main();
-            main.Show();
+            //this.Hide();
+            //Main main = new Main(int );
+            //main.Show();
         }
     }
 }

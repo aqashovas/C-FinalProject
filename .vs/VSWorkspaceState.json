@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Library",
-    "\\Library\\Forms"
+    "\\Library\\Forms",
+    "\\Library\\Models"
   ],
-  "SelectedNode": "\\Library\\Models",
+  "SelectedNode": "\\Library.sln",
   "PreviewInSolutionExplorer": false
 }
