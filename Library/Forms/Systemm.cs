@@ -30,28 +30,42 @@ namespace Library
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             if(!(string.IsNullOrEmpty(txtName.Text) && string.IsNullOrEmpty(txtPass.Text))){
-                foreach (var item in db.Admins.ToList())
-                {
-                    if (txtName.Text == item.ALogName && txtPass.Text == item.Password)
+                
+                    if ( db.Admins.Any(a=>a.ALogName== txtName.Text  && a.Password==txtPass.Text))
                     {
                         //adminin id -sinin əsas forma göndərilməsi
                         int adminid = db.Admins.FirstOrDefault(a => a.ALogName == txtName.Text).Id;
-                        Forms.Main main = new Forms.Main(adminid);
-                        //əsas formun açılması
-                        this.Hide();
+
+                    ////əsas formun açılması
+                    Forms.Main main = new Forms.Main(adminid);
+                    this.Hide();
                         main.Show();
+                        
+
                     }
                     else 
                     {
                         MetroFramework.MetroMessageBox.Show(this, "Username or password are is not correct!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                }
+                
             }
             else
             {
                 MetroFramework.MetroMessageBox.Show(this, "Do not leave empty space!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
+        }
+
+        private void pictureBox2_MouseEnter(object sender, EventArgs e)
+        {
+            txtPass.UseSystemPasswordChar = false;
+            txtPass.PasswordChar ='\0';
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            txtPass.UseSystemPasswordChar = false;
+            txtPass.PasswordChar = '●';
         }
     }
 }

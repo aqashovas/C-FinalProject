@@ -173,6 +173,16 @@ namespace Library.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_icon_eye_211661 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_icon-eye_211661", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_LinkedIn_UI_15_2335590 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_LinkedIn_UI-15_2335590", resourceCulture);
@@ -206,16 +216,6 @@ namespace Library.Properties {
         internal static System.Drawing.Bitmap iconfinder_user_home_118931 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_user-home_118931", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap iconfinder_user_home_1189311 {
-            get {
-                object obj = ResourceManager.GetObject("iconfinder_user-home_1189311", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

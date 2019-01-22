@@ -75,6 +75,12 @@
     <Compile Include="Forms\Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\B_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\B_Orders.Designer.cs">
+      <DependentUpon>B_Orders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\B_Orders.resx">
+      <DependentUpon>B_Orders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FUsers.resx">
       <DependentUpon>FUsers.cs</DependentUpon>
@@ -185,8 +194,6 @@
     <None Include="Resources\2335590-48.png" />
     <None Include="Resources\iconfinder_LinkedIn_UI-15_23355901.png" />
     <None Include="Resources\iconfinder_LinkedIn_UI-15_2335590.png" />
-    <None Include="Resources\iconfinder_user-home_1189311.png" />
-    <None Include="Resources\iconfinder_user-home_118931.png" />
     <None Include="Resources\iconfinder_books-lb_86104.png" />
     <None Include="Resources\iconfinder_config-users_28644 %281%291.png" />
     <None Include="Resources\iconfinder_config-users_28644 %281%29.png" />
@@ -210,6 +217,8 @@
       <DependentUpon>Database.edmx</DependentUpon>
       <LastGenOutput>Database.cs</LastGenOutput>
     </Content>
+    <Content Include="Resources\iconfinder_user-home_118931.png" />
+    <None Include="Resources\iconfinder_icon-eye_211661.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

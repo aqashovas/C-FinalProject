@@ -30,7 +30,7 @@ namespace Library.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +50,7 @@ namespace Library.Forms
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new MetroFramework.Controls.MetroButton();
             this.pbHome = new System.Windows.Forms.PictureBox();
+            this.lblBack = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.grpBooks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCount)).BeginInit();
@@ -68,17 +69,17 @@ namespace Library.Forms
             this.Column2,
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(588, 160);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.Location = new System.Drawing.Point(567, 160);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(911, 737);
+            this.dataGridView1.Size = new System.Drawing.Size(721, 559);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
@@ -105,6 +106,7 @@ namespace Library.Forms
             // 
             // grpBooks
             // 
+            this.grpBooks.Controls.Add(this.lblBack);
             this.grpBooks.Controls.Add(this.txtPrice);
             this.grpBooks.Controls.Add(this.metroLabel3);
             this.grpBooks.Controls.Add(this.numCount);
@@ -317,12 +319,22 @@ namespace Library.Forms
             this.pbHome.TabStop = false;
             this.pbHome.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // lblBack
+            // 
+            this.lblBack.AutoSize = true;
+            this.lblBack.Location = new System.Drawing.Point(247, 296);
+            this.lblBack.Name = "lblBack";
+            this.lblBack.Size = new System.Drawing.Size(61, 19);
+            this.lblBack.TabIndex = 26;
+            this.lblBack.Text = "Back <--";
+            this.lblBack.Visible = false;
+            // 
             // Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Library.Properties.Resources.iconfinder_user_home_118931;
-            this.ClientSize = new System.Drawing.Size(1620, 920);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.pbHome);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtSearh);
@@ -363,5 +375,6 @@ namespace Library.Forms
         private MetroFramework.Controls.MetroTextBox txtSearh;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pbHome;
+        private MetroFramework.Controls.MetroLabel lblBack;
     }
 }

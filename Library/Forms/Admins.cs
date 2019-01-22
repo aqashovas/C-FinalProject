@@ -20,79 +20,13 @@ namespace Library.Forms
         public Admins()
         {
             InitializeComponent();
+            FillData();
 
 
         }
-
-        private void txtPass_TextChanged(object sender, EventArgs e)
-        {
-            char[] txtarray = txtPass.Text.ToCharArray();
-            foreach (char i in txtarray)
-            {
-
-
-                if (char.IsDigit(i))
-                {
-                    numberlabel.ForeColor = Color.Blue;
-                }
-                else if (char.IsLower(i))
-                {
-                    lowercaselabel.ForeColor = Color.Blue;
-                }
-                else if (char.IsUpper(i))
-                {
-                    uppercaselabel.ForeColor = Color.Blue;
-                }
-                else
-                {
-                    speciallabel.ForeColor = Color.Blue;
-                }
-
-                if (txtarray.Length >= 6 && speciallabel.ForeColor == Color.Blue && uppercaselabel.ForeColor == Color.Blue && lowercaselabel.ForeColor == Color.Blue && numberlabel.ForeColor == Color.Blue)
-                {
-                    comp.Visible = true;
-                    uppercaselabel.Visible = false;
-                    lowercaselabel.Visible = false;
-                    speciallabel.Visible = false;
-                    numberlabel.Visible = false;
-                    alllabel.Visible = false;
-                }
-
-
-            }
-        }
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            if (db.Admins.Any(a => a.ALogName == txtLogname.Text))
-            {
-                MetroFramework.MetroMessageBox.Show(this, "This admin has already sign uped!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-            else
-            {
-                Admin admin = new Admin
-                {
-                    ALogName = txtLogname.Text,
-                    AName = txtName.Text.Split(' ')[1],
-                    ASurname = txtName.Text.Split(' ')[0],
-                    
-                };
-                if (comp.Visible == true)
-                {
-                    admin.Password = txtPass.Text;
-                }
-                else
-                {
-                    MetroFramework.MetroMessageBox.Show(this, "Please,choose correct password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
-                db.Admins.Add(admin);
-                db.SaveChanges();
-                FillData();
-                Reset();
-            }
-        }
-
+      
+      
+        //textbox'ların təmizlənməsi
         private void Reset()
         {
             txtLogname.ResetText();
@@ -100,6 +34,7 @@ namespace Library.Forms
             txtPass.ResetText();
             
         }
+        //cədvəldən məlumatların çıxarılması
         private void FillData()
         {
             dataGridView1.Rows.Clear();
@@ -108,26 +43,28 @@ namespace Library.Forms
                 dataGridView1.Rows.Add(item.Id, item.ASurname + " " + item.AName, item.ALogName, item.Password);
             }
         }
+        //axtaarışın aparılması
         private void txtSearh_Click(object sender, EventArgs e)
         {
             txtSearh.ResetText();
             FillData();
             
         }
-
+        //cədvəldən məlumatın seçilməsi
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             SelectedId =Convert.ToInt32( dataGridView1.Rows[e.RowIndex].Cells[0].Value);
             txtLogname.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtName.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtPass.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtPass.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             btnAdd.Visible = false;
             btnDel.Visible = true;
             btnUpdate.Visible = true;
+            lblBack.Visible = true;
 
 
         }
-
+        //adminin silinməsi
         private void btnDel_Click(object sender, EventArgs e)
         {
 
@@ -144,7 +81,7 @@ namespace Library.Forms
             btnUpdate.Visible = false;
             FillData();
         }
-
+        //admins cədvəlinin yenilənməsi
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             foreach (var item in db.Admins.Where(a=>a.Id==SelectedId).ToList())
@@ -161,7 +98,7 @@ namespace Library.Forms
             FillData();
             Reset();
         }
-
+        //axtarışın aparılması
         private void btnSearch_Click(object sender, EventArgs e)
         {
 
@@ -180,9 +117,43 @@ namespace Library.Forms
 
             }
         }
-
-        private void grpUsers_Enter(object sender, EventArgs e)
+        //formu əvvəlki vəziyyətə qaytarmaq
+        private void Back()
         {
+            Reset();
+            btnDel.Visible = false;
+            btnUpdate.Visible = false;
+            btnAdd.Visible = true;
+            lblBack.Visible = false;
+        }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            Back();
+        }
+        //adminin əlavə edilməsi
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+            if (db.Admins.Any(a => a.ALogName == txtLogname.Text))
+            {
+                MetroFramework.MetroMessageBox.Show(this, "This admin has already sign uped!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+            Admin admin = new Admin
+            {
+                ALogName = txtLogname.Text,
+                AName = txtName.Text.Split(' ')[1],
+                ASurname = txtName.Text.Split(' ')[0],
+                Password = txtPass.Text
+
+            };
+
+            db.Admins.Add(admin);
+            db.SaveChanges();
+            FillData();
+            Reset();
 
         }
     }

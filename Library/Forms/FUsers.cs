@@ -17,11 +17,13 @@ namespace Library.Forms
     {
         private readonly LibraryEntities2 db = new LibraryEntities2();
         private int SelectedId;
-        public FUsers()
+        private Main Main;
+        public FUsers(Main main)
         {
             InitializeComponent();
             FillData();
             this.Style = MetroFramework.MetroColorStyle.Orange;
+            Main = main;
         }
    
       
@@ -58,6 +60,7 @@ namespace Library.Forms
                 if (char.IsDigit(i))
                 {
                     user.Phone = txtPhone.Text;
+
                 }
                 else
                 {
@@ -77,7 +80,7 @@ namespace Library.Forms
             string abc = ab.Substring(4, 2);
             string totalNumber = abc + a + b + minute + id;
 
- if (db.Users.Any(u => u.Phone == txtPhone.Text))
+            if (db.Users.Any(u => u.Phone == txtPhone.Text))
             {
                 MetroFramework.MetroMessageBox.Show(this, "This user has already sign uped!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -94,7 +97,9 @@ namespace Library.Forms
                 user.Password = totalNumber;
             }
             db.Users.Add(user);
-            db.SaveChanges();}
+            db.SaveChanges();
+            }
+            Main.FillCmbUsers();
             FillData();
             Reset();
           
@@ -110,6 +115,7 @@ namespace Library.Forms
             btnAdd.Visible = false;
             btnDel.Visible = true;
             btnUpdate.Visible = true;
+            lblBack.Visible = true;
         }
         private void Reset()
         {
@@ -181,7 +187,18 @@ namespace Library.Forms
             }
 
         }
-
-      
+        //formu əvvəlki vəziyyyətə qaytarmaq
+        private void Back()
+        {
+            Reset();
+            btnDel.Visible = false;
+            btnUpdate.Visible = false;
+            btnAdd.Visible = true;
+            lblBack.Visible = false;
+        }
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            Back();
+        }
     }
 }

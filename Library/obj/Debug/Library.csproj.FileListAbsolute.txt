@@ -42,3 +42,4 @@ C:\Users\Sabina123\Source\Repos\aqashovas\C-FinalProject\Library\bin\Debug\Metro
 C:\Users\Sabina123\Source\Repos\aqashovas\C-FinalProject\Library\bin\Debug\EntityFramework.xml
 C:\Users\Sabina123\Source\Repos\aqashovas\C-FinalProject\Library\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Sabina123\Source\Repos\aqashovas\C-FinalProject\Library\obj\Debug\Library.csproj.CopyComplete
+C:\Users\Sabina123\Source\Repos\aqashovas\C-FinalProject\Library\obj\Debug\Library.Forms.B_Orders.resources

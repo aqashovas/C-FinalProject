@@ -16,10 +16,12 @@ namespace Library.Forms
     {
         private readonly LibraryEntities2 db = new LibraryEntities2();
         private int SelectedId;
-        public Books()
+        public string bookName;
+       private Main Main;
+        public Books(Main main)
         {
             InitializeComponent();
-           
+            Main = main;
             FillData();
         }
         //yeni kitab əlavə edilməsi
@@ -33,6 +35,8 @@ namespace Library.Forms
             };
             db.Books.Add(book);
             db.SaveChanges();
+            bookName = book.BookName;
+            Main.FillCmbBooks();
             Reset();
             FillData();
 
@@ -43,7 +47,7 @@ namespace Library.Forms
             dataGridView1.Rows.Clear();
             foreach (var item in db.Books.ToList())
             {
-                dataGridView1.Rows.Add(item.BookId, item.BookName, item.BookCount, item.DatePenaltyPrice);
+                dataGridView1.Rows.Add(item.BookId, item.BookName, item.BookCount, Math.Round(Convert.ToDecimal(item.DatePenaltyPrice), 1));
             }
         }
         //Mətlərin təmizlənməsi
@@ -116,7 +120,7 @@ namespace Library.Forms
                 }
             
 
-            if (db.Books.Any(b => b.BookName.Contains(txtSearh.Text)))
+            if (!db.Books.Any(b => b.BookName.Contains(txtSearh.Text)))
             {
                 MetroFramework.MetroMessageBox.Show(this, "Not Found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -130,6 +134,15 @@ namespace Library.Forms
             //this.Hide();
             //Main main = new Main(int );
             //main.Show();
+        }
+
+        private void Back()
+        {
+            Reset();
+            btnDel.Visible = false;
+            btnUpdate.Visible = false;
+            btnAdd.Visible = true;
+            lblBack.Visible = false;
         }
     }
 }

@@ -29,67 +29,189 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.lblBooks = new MetroFramework.Controls.MetroLabel();
+            this.lblUsers = new MetroFramework.Controls.MetroLabel();
+            this.lblOrders = new MetroFramework.Controls.MetroLabel();
+            this.lblAdmins = new MetroFramework.Controls.MetroLabel();
+            this.grpTake = new System.Windows.Forms.GroupBox();
+            this.btnReturn = new MetroFramework.Controls.MetroButton();
+            this.cmbUsers = new MetroFramework.Controls.MetroComboBox();
+            this.cmbBooks = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.btnTake = new MetroFramework.Controls.MetroButton();
+            this.pbAdmins = new System.Windows.Forms.PictureBox();
             this.pbOrders = new System.Windows.Forms.PictureBox();
             this.pbUsers = new System.Windows.Forms.PictureBox();
             this.pbBoooks = new System.Windows.Forms.PictureBox();
-            this.pbAdmins = new System.Windows.Forms.PictureBox();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.grpTake = new System.Windows.Forms.GroupBox();
-            this.btnTake = new MetroFramework.Controls.MetroButton();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
-            this.txtUserN = new MetroFramework.Controls.MetroTextBox();
-            this.txtBookName = new MetroFramework.Controls.MetroTextBox();
-            this.dtStart = new MetroFramework.Controls.MetroDateTime();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grpTake.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdmins)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOrders)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBoooks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdmins)).BeginInit();
-            this.grpTake.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // metroLabel1
+            // lblBooks
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.metroLabel1.Location = new System.Drawing.Point(32, 104);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(50, 19);
-            this.metroLabel1.TabIndex = 1;
-            this.metroLabel1.Text = "Books";
-            this.metroLabel1.UseCustomBackColor = true;
-            this.metroLabel1.UseCustomForeColor = true;
+            this.lblBooks.AutoSize = true;
+            this.lblBooks.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblBooks.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lblBooks.Location = new System.Drawing.Point(32, 104);
+            this.lblBooks.Name = "lblBooks";
+            this.lblBooks.Size = new System.Drawing.Size(50, 19);
+            this.lblBooks.TabIndex = 1;
+            this.lblBooks.Text = "Books";
+            this.lblBooks.UseCustomBackColor = true;
+            this.lblBooks.UseCustomForeColor = true;
+            this.lblBooks.Click += new System.EventHandler(this.lblBooks_Click);
             // 
-            // metroLabel2
+            // lblUsers
             // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.metroLabel2.Location = new System.Drawing.Point(120, 104);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(45, 19);
-            this.metroLabel2.TabIndex = 3;
-            this.metroLabel2.Text = "Users";
-            this.metroLabel2.UseCustomBackColor = true;
-            this.metroLabel2.UseCustomForeColor = true;
+            this.lblUsers.AutoSize = true;
+            this.lblUsers.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblUsers.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lblUsers.Location = new System.Drawing.Point(120, 104);
+            this.lblUsers.Name = "lblUsers";
+            this.lblUsers.Size = new System.Drawing.Size(45, 19);
+            this.lblUsers.TabIndex = 3;
+            this.lblUsers.Text = "Users";
+            this.lblUsers.UseCustomBackColor = true;
+            this.lblUsers.UseCustomForeColor = true;
+            this.lblUsers.Click += new System.EventHandler(this.lblUsers_Click);
             // 
-            // metroLabel3
+            // lblOrders
             // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.metroLabel3.Location = new System.Drawing.Point(205, 104);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(55, 19);
-            this.metroLabel3.TabIndex = 5;
-            this.metroLabel3.Text = "Orders";
-            this.metroLabel3.UseCustomBackColor = true;
-            this.metroLabel3.UseCustomForeColor = true;
+            this.lblOrders.AutoSize = true;
+            this.lblOrders.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblOrders.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lblOrders.Location = new System.Drawing.Point(205, 104);
+            this.lblOrders.Name = "lblOrders";
+            this.lblOrders.Size = new System.Drawing.Size(55, 19);
+            this.lblOrders.TabIndex = 5;
+            this.lblOrders.Text = "Orders";
+            this.lblOrders.UseCustomBackColor = true;
+            this.lblOrders.UseCustomForeColor = true;
+            this.lblOrders.Click += new System.EventHandler(this.lblOrders_Click);
+            // 
+            // lblAdmins
+            // 
+            this.lblAdmins.AutoSize = true;
+            this.lblAdmins.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblAdmins.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lblAdmins.Location = new System.Drawing.Point(289, 104);
+            this.lblAdmins.Name = "lblAdmins";
+            this.lblAdmins.Size = new System.Drawing.Size(59, 19);
+            this.lblAdmins.TabIndex = 7;
+            this.lblAdmins.Text = "Admins";
+            this.lblAdmins.UseCustomBackColor = true;
+            this.lblAdmins.UseCustomForeColor = true;
+            this.lblAdmins.Click += new System.EventHandler(this.lblAdmins_Click);
+            // 
+            // grpTake
+            // 
+            this.grpTake.Controls.Add(this.btnReturn);
+            this.grpTake.Controls.Add(this.cmbUsers);
+            this.grpTake.Controls.Add(this.cmbBooks);
+            this.grpTake.Controls.Add(this.metroLabel6);
+            this.grpTake.Controls.Add(this.metroLabel5);
+            this.grpTake.Controls.Add(this.btnTake);
+            this.grpTake.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.grpTake.Location = new System.Drawing.Point(120, 167);
+            this.grpTake.Name = "grpTake";
+            this.grpTake.Size = new System.Drawing.Size(408, 277);
+            this.grpTake.TabIndex = 9;
+            this.grpTake.TabStop = false;
+            this.grpTake.Text = "Order";
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnReturn.ForeColor = System.Drawing.Color.White;
+            this.btnReturn.Location = new System.Drawing.Point(278, 185);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(75, 23);
+            this.btnReturn.TabIndex = 9;
+            this.btnReturn.Text = "Return";
+            this.btnReturn.UseCustomBackColor = true;
+            this.btnReturn.UseCustomForeColor = true;
+            this.btnReturn.UseSelectable = true;
+            this.btnReturn.UseStyleColors = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // cmbUsers
+            // 
+            this.cmbUsers.FormattingEnabled = true;
+            this.cmbUsers.ItemHeight = 23;
+            this.cmbUsers.Location = new System.Drawing.Point(129, 68);
+            this.cmbUsers.Name = "cmbUsers";
+            this.cmbUsers.Size = new System.Drawing.Size(224, 29);
+            this.cmbUsers.TabIndex = 8;
+            this.cmbUsers.UseSelectable = true;
+            // 
+            // cmbBooks
+            // 
+            this.cmbBooks.FormattingEnabled = true;
+            this.cmbBooks.ItemHeight = 23;
+            this.cmbBooks.Location = new System.Drawing.Point(129, 103);
+            this.cmbBooks.Name = "cmbBooks";
+            this.cmbBooks.Size = new System.Drawing.Size(224, 29);
+            this.cmbBooks.TabIndex = 7;
+            this.cmbBooks.UseSelectable = true;
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.metroLabel6.Location = new System.Drawing.Point(40, 109);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel6.TabIndex = 2;
+            this.metroLabel6.Text = "Book  Name";
+            this.metroLabel6.UseCustomForeColor = true;
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.metroLabel5.Location = new System.Drawing.Point(40, 72);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(84, 19);
+            this.metroLabel5.TabIndex = 1;
+            this.metroLabel5.Text = "UserNumber";
+            this.metroLabel5.UseCustomBackColor = true;
+            this.metroLabel5.UseCustomForeColor = true;
+            // 
+            // btnTake
+            // 
+            this.btnTake.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnTake.ForeColor = System.Drawing.Color.White;
+            this.btnTake.Location = new System.Drawing.Point(278, 156);
+            this.btnTake.Name = "btnTake";
+            this.btnTake.Size = new System.Drawing.Size(75, 23);
+            this.btnTake.TabIndex = 0;
+            this.btnTake.Text = "Take";
+            this.btnTake.UseCustomBackColor = true;
+            this.btnTake.UseCustomForeColor = true;
+            this.btnTake.UseSelectable = true;
+            this.btnTake.UseStyleColors = true;
+            this.btnTake.Click += new System.EventHandler(this.btnTake_Click);
+            // 
+            // pbAdmins
+            // 
+            this.pbAdmins.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbAdmins.BackgroundImage")));
+            this.pbAdmins.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbAdmins.Location = new System.Drawing.Point(289, 37);
+            this.pbAdmins.Name = "pbAdmins";
+            this.pbAdmins.Size = new System.Drawing.Size(64, 64);
+            this.pbAdmins.TabIndex = 8;
+            this.pbAdmins.TabStop = false;
+            this.pbAdmins.Click += new System.EventHandler(this.pbAdmins_Click);
             // 
             // pbOrders
             // 
@@ -100,6 +222,7 @@
             this.pbOrders.Size = new System.Drawing.Size(64, 64);
             this.pbOrders.TabIndex = 6;
             this.pbOrders.TabStop = false;
+            this.pbOrders.Click += new System.EventHandler(this.pbOrders_Click);
             // 
             // pbUsers
             // 
@@ -123,210 +246,90 @@
             this.pbBoooks.TabStop = false;
             this.pbBoooks.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pbAdmins
+            // groupBox1
             // 
-            this.pbAdmins.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbAdmins.BackgroundImage")));
-            this.pbAdmins.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbAdmins.Location = new System.Drawing.Point(289, 37);
-            this.pbAdmins.Name = "pbAdmins";
-            this.pbAdmins.Size = new System.Drawing.Size(64, 64);
-            this.pbAdmins.TabIndex = 8;
-            this.pbAdmins.TabStop = false;
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.ForeColor = System.Drawing.Color.Lime;
+            this.groupBox1.Location = new System.Drawing.Point(557, 167);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(408, 277);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Waiting";
             // 
-            // metroLabel4
+            // dataGridView1
             // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel4.ForeColor = System.Drawing.Color.LimeGreen;
-            this.metroLabel4.Location = new System.Drawing.Point(289, 104);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(59, 19);
-            this.metroLabel4.TabIndex = 7;
-            this.metroLabel4.Text = "Admins";
-            this.metroLabel4.UseCustomBackColor = true;
-            this.metroLabel4.UseCustomForeColor = true;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.dataGridView1.Location = new System.Drawing.Point(41, 68);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(318, 190);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
-            // grpTake
+            // Column1
             // 
-            this.grpTake.Controls.Add(this.dtStart);
-            this.grpTake.Controls.Add(this.txtBookName);
-            this.grpTake.Controls.Add(this.txtUserN);
-            this.grpTake.Controls.Add(this.metroLabel7);
-            this.grpTake.Controls.Add(this.metroLabel6);
-            this.grpTake.Controls.Add(this.metroLabel5);
-            this.grpTake.Controls.Add(this.btnTake);
-            this.grpTake.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.grpTake.Location = new System.Drawing.Point(111, 157);
-            this.grpTake.Name = "grpTake";
-            this.grpTake.Size = new System.Drawing.Size(311, 277);
-            this.grpTake.TabIndex = 9;
-            this.grpTake.TabStop = false;
-            this.grpTake.Text = "Get Book";
+            this.Column1.HeaderText = "UserNumber";
+            this.Column1.Name = "Column1";
             // 
-            // btnTake
+            // Column2
             // 
-            this.btnTake.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnTake.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnTake.Location = new System.Drawing.Point(184, 207);
-            this.btnTake.Name = "btnTake";
-            this.btnTake.Size = new System.Drawing.Size(75, 23);
-            this.btnTake.TabIndex = 0;
-            this.btnTake.Text = "Take";
-            this.btnTake.UseCustomBackColor = true;
-            this.btnTake.UseCustomForeColor = true;
-            this.btnTake.UseSelectable = true;
-            this.btnTake.UseStyleColors = true;
-            this.btnTake.Click += new System.EventHandler(this.btnTake_Click);
-            // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.metroLabel5.Location = new System.Drawing.Point(40, 72);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(84, 19);
-            this.metroLabel5.TabIndex = 1;
-            this.metroLabel5.Text = "UserNumber";
-            this.metroLabel5.UseCustomBackColor = true;
-            this.metroLabel5.UseCustomForeColor = true;
-            // 
-            // metroLabel6
-            // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.metroLabel6.Location = new System.Drawing.Point(40, 109);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(83, 19);
-            this.metroLabel6.TabIndex = 2;
-            this.metroLabel6.Text = "Book  Name";
-            this.metroLabel6.UseCustomForeColor = true;
-            // 
-            // metroLabel7
-            // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.metroLabel7.Location = new System.Drawing.Point(40, 143);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(69, 19);
-            this.metroLabel7.TabIndex = 3;
-            this.metroLabel7.Text = "Date Time";
-            this.metroLabel7.UseCustomForeColor = true;
-            // 
-            // txtUserN
-            // 
-            // 
-            // 
-            // 
-            this.txtUserN.CustomButton.Image = null;
-            this.txtUserN.CustomButton.Location = new System.Drawing.Point(110, 1);
-            this.txtUserN.CustomButton.Name = "";
-            this.txtUserN.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtUserN.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtUserN.CustomButton.TabIndex = 1;
-            this.txtUserN.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtUserN.CustomButton.UseSelectable = true;
-            this.txtUserN.CustomButton.Visible = false;
-            this.txtUserN.Lines = new string[0];
-            this.txtUserN.Location = new System.Drawing.Point(127, 72);
-            this.txtUserN.MaxLength = 32767;
-            this.txtUserN.Name = "txtUserN";
-            this.txtUserN.PasswordChar = '\0';
-            this.txtUserN.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtUserN.SelectedText = "";
-            this.txtUserN.SelectionLength = 0;
-            this.txtUserN.SelectionStart = 0;
-            this.txtUserN.ShortcutsEnabled = true;
-            this.txtUserN.Size = new System.Drawing.Size(132, 23);
-            this.txtUserN.TabIndex = 4;
-            this.txtUserN.UseSelectable = true;
-            this.txtUserN.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtUserN.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // txtBookName
-            // 
-            // 
-            // 
-            // 
-            this.txtBookName.CustomButton.Image = null;
-            this.txtBookName.CustomButton.Location = new System.Drawing.Point(110, 1);
-            this.txtBookName.CustomButton.Name = "";
-            this.txtBookName.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtBookName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtBookName.CustomButton.TabIndex = 1;
-            this.txtBookName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtBookName.CustomButton.UseSelectable = true;
-            this.txtBookName.CustomButton.Visible = false;
-            this.txtBookName.Lines = new string[0];
-            this.txtBookName.Location = new System.Drawing.Point(127, 109);
-            this.txtBookName.MaxLength = 32767;
-            this.txtBookName.Name = "txtBookName";
-            this.txtBookName.PasswordChar = '\0';
-            this.txtBookName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBookName.SelectedText = "";
-            this.txtBookName.SelectionLength = 0;
-            this.txtBookName.SelectionStart = 0;
-            this.txtBookName.ShortcutsEnabled = true;
-            this.txtBookName.Size = new System.Drawing.Size(132, 23);
-            this.txtBookName.TabIndex = 5;
-            this.txtBookName.UseSelectable = true;
-            this.txtBookName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtBookName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // dtStart
-            // 
-            this.dtStart.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dtStart.Location = new System.Drawing.Point(127, 138);
-            this.dtStart.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dtStart.Name = "dtStart";
-            this.dtStart.Size = new System.Drawing.Size(132, 29);
-            this.dtStart.TabIndex = 6;
-            this.dtStart.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.dtStart.UseCustomBackColor = true;
-            this.dtStart.UseCustomForeColor = true;
+            this.Column2.HeaderText = "Book Name";
+            this.Column2.Name = "Column2";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1078, 516);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpTake);
             this.Controls.Add(this.pbAdmins);
-            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.lblAdmins);
             this.Controls.Add(this.pbOrders);
-            this.Controls.Add(this.metroLabel3);
+            this.Controls.Add(this.lblOrders);
             this.Controls.Add(this.pbUsers);
-            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.lblUsers);
             this.Controls.Add(this.pbBoooks);
-            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.lblBooks);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Main";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
+            this.grpTake.ResumeLayout(false);
+            this.grpTake.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdmins)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOrders)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBoooks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdmins)).EndInit();
-            this.grpTake.ResumeLayout(false);
-            this.grpTake.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel lblBooks;
         private System.Windows.Forms.PictureBox pbBoooks;
         private System.Windows.Forms.PictureBox pbUsers;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroLabel lblUsers;
         private System.Windows.Forms.PictureBox pbOrders;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel lblOrders;
         private System.Windows.Forms.PictureBox pbAdmins;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroLabel lblAdmins;
         private System.Windows.Forms.GroupBox grpTake;
-        private MetroFramework.Controls.MetroDateTime dtStart;
-        private MetroFramework.Controls.MetroTextBox txtBookName;
-        private MetroFramework.Controls.MetroTextBox txtUserN;
-        private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroButton btnTake;
+        private MetroFramework.Controls.MetroComboBox cmbBooks;
+        private MetroFramework.Controls.MetroComboBox cmbUsers;
+        private MetroFramework.Controls.MetroButton btnReturn;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

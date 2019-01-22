@@ -29,27 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtName = new MetroFramework.Controls.MetroTextBox();
             this.txtPass = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnSignIn = new MetroFramework.Controls.MetroButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Library.Properties.Resources.iconfinder_Sed_01_2236069;
-            this.pictureBox1.Location = new System.Drawing.Point(108, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // txtName
             // 
@@ -132,6 +125,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnSignIn);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.metroLabel2);
@@ -143,6 +137,18 @@
             this.panel1.Size = new System.Drawing.Size(259, 277);
             this.panel1.TabIndex = 5;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Library.Properties.Resources.iconfinder_icon_eye_211661;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(240, 179);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
+            this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
+            // 
             // btnSignIn
             // 
             this.btnSignIn.ForeColor = System.Drawing.Color.Black;
@@ -153,6 +159,15 @@
             this.btnSignIn.Text = "Sign in";
             this.btnSignIn.UseSelectable = true;
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Library.Properties.Resources.iconfinder_Sed_01_2236069;
+            this.pictureBox1.Location = new System.Drawing.Point(108, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // metroStyleManager1
             // 
@@ -167,9 +182,10 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "System";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.ResumeLayout(false);
 
@@ -185,6 +201,7 @@
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroButton btnSignIn;
         private MetroFramework.Components.MetroStyleManager metroStyleManager1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

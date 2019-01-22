@@ -29,96 +29,31 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.comp = new System.Windows.Forms.Label();
-            this.alllabel = new System.Windows.Forms.Label();
-            this.speciallabel = new System.Windows.Forms.Label();
-            this.numberlabel = new System.Windows.Forms.Label();
-            this.uppercaselabel = new System.Windows.Forms.Label();
-            this.lowercaselabel = new System.Windows.Forms.Label();
             this.txtPass = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnUpdate = new MetroFramework.Controls.MetroButton();
             this.btnDel = new MetroFramework.Controls.MetroButton();
             this.btnAdd = new MetroFramework.Controls.MetroButton();
             this.txtName = new MetroFramework.Controls.MetroTextBox();
             this.grpUsers = new System.Windows.Forms.GroupBox();
+            this.lblBack = new MetroFramework.Controls.MetroLabel();
+            this.txtLogname = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.txtSearh = new MetroFramework.Controls.MetroTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new MetroFramework.Controls.MetroButton();
-            this.txtLogname = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.grpUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // comp
-            // 
-            this.comp.AutoSize = true;
-            this.comp.ForeColor = System.Drawing.Color.Green;
-            this.comp.Location = new System.Drawing.Point(251, 174);
-            this.comp.Name = "comp";
-            this.comp.Size = new System.Drawing.Size(57, 13);
-            this.comp.TabIndex = 22;
-            this.comp.Text = "Completed";
-            this.comp.Visible = false;
-            // 
-            // alllabel
-            // 
-            this.alllabel.AutoSize = true;
-            this.alllabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.alllabel.Location = new System.Drawing.Point(278, 174);
-            this.alllabel.Name = "alllabel";
-            this.alllabel.Size = new System.Drawing.Size(104, 13);
-            this.alllabel.TabIndex = 21;
-            this.alllabel.Text = "6 character minimum";
-            // 
-            // speciallabel
-            // 
-            this.speciallabel.AutoSize = true;
-            this.speciallabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.speciallabel.Location = new System.Drawing.Point(197, 198);
-            this.speciallabel.Name = "speciallabel";
-            this.speciallabel.Size = new System.Drawing.Size(111, 13);
-            this.speciallabel.TabIndex = 20;
-            this.speciallabel.Text = "One special character";
-            // 
-            // numberlabel
-            // 
-            this.numberlabel.AutoSize = true;
-            this.numberlabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.numberlabel.Location = new System.Drawing.Point(197, 174);
-            this.numberlabel.Name = "numberlabel";
-            this.numberlabel.Size = new System.Drawing.Size(65, 13);
-            this.numberlabel.TabIndex = 19;
-            this.numberlabel.Text = "One number";
-            // 
-            // uppercaselabel
-            // 
-            this.uppercaselabel.AutoSize = true;
-            this.uppercaselabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.uppercaselabel.Location = new System.Drawing.Point(66, 198);
-            this.uppercaselabel.Name = "uppercaselabel";
-            this.uppercaselabel.Size = new System.Drawing.Size(128, 13);
-            this.uppercaselabel.TabIndex = 18;
-            this.uppercaselabel.Text = "One uppercase character";
-            // 
-            // lowercaselabel
-            // 
-            this.lowercaselabel.AutoSize = true;
-            this.lowercaselabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lowercaselabel.Location = new System.Drawing.Point(66, 174);
-            this.lowercaselabel.Name = "lowercaselabel";
-            this.lowercaselabel.Size = new System.Drawing.Size(126, 13);
-            this.lowercaselabel.TabIndex = 17;
-            this.lowercaselabel.Text = "One lowercase character";
             // 
             // txtPass
             // 
@@ -135,7 +70,7 @@
             this.txtPass.CustomButton.UseSelectable = true;
             this.txtPass.CustomButton.Visible = false;
             this.txtPass.Lines = new string[0];
-            this.txtPass.Location = new System.Drawing.Point(167, 131);
+            this.txtPass.Location = new System.Drawing.Point(167, 169);
             this.txtPass.MaxLength = 32767;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '\0';
@@ -149,32 +84,15 @@
             this.txtPass.UseSelectable = true;
             this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(69, 135);
+            this.metroLabel3.Location = new System.Drawing.Point(69, 173);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(63, 19);
             this.metroLabel3.TabIndex = 9;
             this.metroLabel3.Text = "Password";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Password";
-            this.Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Fullname";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id";
-            this.Column1.Name = "Column1";
-            this.Column1.Visible = false;
             // 
             // dataGridView1
             // 
@@ -184,6 +102,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Column4,
             this.Column2,
             this.Column3});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -194,10 +113,33 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(560, 210);
+            this.dataGridView1.Location = new System.Drawing.Point(591, 133);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(911, 636);
+            this.dataGridView1.Size = new System.Drawing.Size(710, 483);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "User Name";
+            this.Column4.Name = "Column4";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Fullname";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Password";
+            this.Column3.Name = "Column3";
+            this.Column3.Visible = false;
             // 
             // btnUpdate
             // 
@@ -242,6 +184,7 @@
             this.btnAdd.UseCustomBackColor = true;
             this.btnAdd.UseCustomForeColor = true;
             this.btnAdd.UseSelectable = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // txtName
             // 
@@ -258,7 +201,7 @@
             this.txtName.CustomButton.UseSelectable = true;
             this.txtName.CustomButton.Visible = false;
             this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(167, 51);
+            this.txtName.Location = new System.Drawing.Point(167, 89);
             this.txtName.MaxLength = 32767;
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
@@ -275,14 +218,9 @@
             // 
             // grpUsers
             // 
+            this.grpUsers.Controls.Add(this.lblBack);
             this.grpUsers.Controls.Add(this.txtLogname);
             this.grpUsers.Controls.Add(this.metroLabel2);
-            this.grpUsers.Controls.Add(this.comp);
-            this.grpUsers.Controls.Add(this.alllabel);
-            this.grpUsers.Controls.Add(this.speciallabel);
-            this.grpUsers.Controls.Add(this.numberlabel);
-            this.grpUsers.Controls.Add(this.uppercaselabel);
-            this.grpUsers.Controls.Add(this.lowercaselabel);
             this.grpUsers.Controls.Add(this.txtPass);
             this.grpUsers.Controls.Add(this.metroLabel3);
             this.grpUsers.Controls.Add(this.btnUpdate);
@@ -296,12 +234,61 @@
             this.grpUsers.TabIndex = 11;
             this.grpUsers.TabStop = false;
             this.grpUsers.Text = "Admins";
-            this.grpUsers.Enter += new System.EventHandler(this.grpUsers_Enter);
+            // 
+            // lblBack
+            // 
+            this.lblBack.AutoSize = true;
+            this.lblBack.Location = new System.Drawing.Point(243, 264);
+            this.lblBack.Name = "lblBack";
+            this.lblBack.Size = new System.Drawing.Size(61, 19);
+            this.lblBack.TabIndex = 25;
+            this.lblBack.Text = "Back <--";
+            this.lblBack.Visible = false;
+            this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
+            // 
+            // txtLogname
+            // 
+            // 
+            // 
+            // 
+            this.txtLogname.CustomButton.Image = null;
+            this.txtLogname.CustomButton.Location = new System.Drawing.Point(119, 1);
+            this.txtLogname.CustomButton.Name = "";
+            this.txtLogname.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtLogname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtLogname.CustomButton.TabIndex = 1;
+            this.txtLogname.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtLogname.CustomButton.UseSelectable = true;
+            this.txtLogname.CustomButton.Visible = false;
+            this.txtLogname.Lines = new string[0];
+            this.txtLogname.Location = new System.Drawing.Point(167, 129);
+            this.txtLogname.MaxLength = 32767;
+            this.txtLogname.Name = "txtLogname";
+            this.txtLogname.PasswordChar = '\0';
+            this.txtLogname.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtLogname.SelectedText = "";
+            this.txtLogname.SelectionLength = 0;
+            this.txtLogname.SelectionStart = 0;
+            this.txtLogname.ShortcutsEnabled = true;
+            this.txtLogname.Size = new System.Drawing.Size(141, 23);
+            this.txtLogname.TabIndex = 24;
+            this.txtLogname.UseSelectable = true;
+            this.txtLogname.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtLogname.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(69, 133);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(71, 19);
+            this.metroLabel2.TabIndex = 23;
+            this.metroLabel2.Text = "UserName";
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(69, 51);
+            this.metroLabel1.Location = new System.Drawing.Point(69, 89);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(62, 19);
             this.metroLabel1.TabIndex = 0;
@@ -372,45 +359,6 @@
             this.btnSearch.TabIndex = 12;
             this.btnSearch.UseSelectable = true;
             // 
-            // txtLogname
-            // 
-            // 
-            // 
-            // 
-            this.txtLogname.CustomButton.Image = null;
-            this.txtLogname.CustomButton.Location = new System.Drawing.Point(119, 1);
-            this.txtLogname.CustomButton.Name = "";
-            this.txtLogname.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtLogname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtLogname.CustomButton.TabIndex = 1;
-            this.txtLogname.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtLogname.CustomButton.UseSelectable = true;
-            this.txtLogname.CustomButton.Visible = false;
-            this.txtLogname.Lines = new string[0];
-            this.txtLogname.Location = new System.Drawing.Point(167, 91);
-            this.txtLogname.MaxLength = 32767;
-            this.txtLogname.Name = "txtLogname";
-            this.txtLogname.PasswordChar = '\0';
-            this.txtLogname.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtLogname.SelectedText = "";
-            this.txtLogname.SelectionLength = 0;
-            this.txtLogname.SelectionStart = 0;
-            this.txtLogname.ShortcutsEnabled = true;
-            this.txtLogname.Size = new System.Drawing.Size(141, 23);
-            this.txtLogname.TabIndex = 24;
-            this.txtLogname.UseSelectable = true;
-            this.txtLogname.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtLogname.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(69, 95);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(71, 19);
-            this.metroLabel2.TabIndex = 23;
-            this.metroLabel2.Text = "UserName";
-            // 
             // Admins
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,17 +385,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label comp;
-        private System.Windows.Forms.Label alllabel;
-        private System.Windows.Forms.Label speciallabel;
-        private System.Windows.Forms.Label numberlabel;
-        private System.Windows.Forms.Label uppercaselabel;
-        private System.Windows.Forms.Label lowercaselabel;
         private MetroFramework.Controls.MetroTextBox txtPass;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private MetroFramework.Controls.MetroButton btnUpdate;
         private MetroFramework.Controls.MetroButton btnDel;
@@ -459,5 +398,10 @@
         private MetroFramework.Controls.MetroTextBox txtSearh;
         private MetroFramework.Controls.MetroTextBox txtLogname;
         private MetroFramework.Controls.MetroLabel metroLabel2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private MetroFramework.Controls.MetroLabel lblBack;
     }
 }
